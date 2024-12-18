@@ -1,0 +1,10 @@
+.content_wrapper {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 650px) {
+  .content_wrapper {
+    overflow-x: hidden;
+  }
+}

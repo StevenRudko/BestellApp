@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/dishes.css" />
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <script src="./scripts/db.js"></script>
+    <script src="./script.js"></script>
+    <script src="./scripts/templateDishes.js"></script>
+    <script src="./scripts/templateCart.js"></script>
+    <script src="./scripts/cartFunctions.js"></script>
+    <script src="./scripts/placeOrder.js"></script>
+    <script src="./scripts/openCloseBasket.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Bestellapp</title>
+  </head>
+  <body onload="render()">
+    <header>
+      <a href="./index.html"
+        ><img class="logo" src="./assets/img/Bestell App- Logo.svg" alt="Logo"
+      /></a>
+    </header>
+    <main>
+      <div class="content_wrapper">
+        <section class="content_container">
+          <div id="restaurant_site"></div>
+        </section>
+        <section class="basket_wrapper basket_closed">
+          <div class="basket_header">
+            <h1>Warenkorb</h1>
+          </div>
+          <div id="shopping_cart"></div>
+        </section>
+      </div>
+    </main>
+    <button
+      onclick="openCloseBasket()"
+      id="toggle_cart_button"
+      class="cart_button"
+    >
+      Warenkorb anzeigen
+    </button>
+    <footer>
+      <a href="./index.html"
+        ><img
+          class="logo_footer"
+          src="./assets/img/Bestell App- Logo.svg"
+          alt=""
+      /></a>
+    </footer>
+  </body>
+</html>

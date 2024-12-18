@@ -1,0 +1,168 @@
+.content_container {
+  width: calc(100% - 300px);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+.content {
+  height: auto;
+  width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant_logo {
+  margin-top: 100px;
+  height: 120px;
+  z-index: 1;
+  border-radius: 180%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: -40px;
+  margin-bottom: 16px;
+}
+
+.rating {
+  font-size: 16px;
+  color: #ffb723;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.rating:hover {
+  text-decoration: underline;
+}
+
+.bar {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: -32px;
+  margin-right: -32px;
+  height: 56px;
+  background-color: #f7f6f1;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.bar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.arrow_right {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.types_of_dishes {
+  text-decoration: none;
+  color: #84888c;
+  padding-right: 40px;
+}
+
+.main_dish {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-margin-top: 32px;
+  margin-top: 16px;
+}
+
+h3 {
+  padding-left: 16px;
+  font-size: 20px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.dish:hover {
+  background-color: #fee5cb;
+}
+
+.add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+
+.dish_description {
+  padding-left: 16px;
+  font-weight: 100;
+}
+
+.price {
+  padding-left: 16px;
+  font-weight: 700;
+  color: #ffb723;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .arrow_right {
+    display: none;
+  }
+  .types_of_dishes {
+    padding-right: 0;
+    padding-left: 32px;
+  }
+  .bar {
+    padding-right: 32px;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  .rating {
+    text-align: center;
+  }
+  .bar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 650px) {
+  .content_container {
+    width: 100%;
+    margin-top: 80px;
+  }
+}

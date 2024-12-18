@@ -1,0 +1,25 @@
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #ff8000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 64px;
+  padding-left: 24px;
+  padding-top: 4px;
+}
+
+@media (max-width: 650px) {
+  header {
+    position: fixed;
+    z-index: 3;
+    justify-content: center;
+  }
+  .logo {
+    padding-left: 0;
+  }
+}
